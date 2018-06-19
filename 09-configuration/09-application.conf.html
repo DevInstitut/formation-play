@@ -1,0 +1,2119 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>application.conf · Formation Play! Framework</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../10-persistances/" />
+    
+    
+    <link rel="prev" href="08-format-des-tailles.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
+            
+                <a href="../01-introduction/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01-introduction/01-principe.html">
+            
+                <a href="../01-introduction/01-principe.html">
+            
+                    
+                    Principe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01-introduction/02-historique.html">
+            
+                <a href="../01-introduction/02-historique.html">
+            
+                    
+                    Historique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01-introduction/03-caracteristiques.html">
+            
+                <a href="../01-introduction/03-caracteristiques.html">
+            
+                    
+                    Caractéristiques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01-introduction/04-composants.html">
+            
+                <a href="../01-introduction/04-composants.html">
+            
+                    
+                    Composants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../01-introduction/06-java-vs-scala.html">
+            
+                <a href="../01-introduction/06-java-vs-scala.html">
+            
+                    
+                    Java vs Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../01-introduction/07-play!-vs-java-ee.html">
+            
+                <a href="../01-introduction/07-play!-vs-java-ee.html">
+            
+                    
+                    Play! vs Java EE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../01-introduction/08-reactive-manifesto.html">
+            
+                <a href="../01-introduction/08-reactive-manifesto.html">
+            
+                    
+                    Reactive Manifesto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../01-introduction/09-installation.html">
+            
+                <a href="../01-introduction/09-installation.html">
+            
+                    
+                    Démarrer avec Play!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../01-introduction/10-ide.html">
+            
+                <a href="../01-introduction/10-ide.html">
+            
+                    
+                    IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../01-introduction/99-tp.html">
+            
+                <a href="../01-introduction/99-tp.html">
+            
+                    
+                    TP #1 - Premiers pas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-sbt/">
+            
+                <a href="../02-sbt/">
+            
+                    
+                    SBT
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-sbt/01-sbt.html">
+            
+                <a href="../02-sbt/01-sbt.html">
+            
+                    
+                    SBT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-sbt/02-anatomie-d’un-projet-play.md">
+            
+                <span>
+            
+                    
+                    Anatomie d’un projet Play! 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-sbt/03-gestion-des-dependances.html">
+            
+                <a href="../02-sbt/03-gestion-des-dependances.html">
+            
+                    
+                    Gestion des dépendances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02-sbt/04-reférentiels.md">
+            
+                <span>
+            
+                    
+                    Référentiels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02-sbt/05-la-console-sbt.html">
+            
+                <a href="../02-sbt/05-la-console-sbt.html">
+            
+                    
+                    La console SBT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02-sbt/99-tp.html">
+            
+                <a href="../02-sbt/99-tp.html">
+            
+                    
+                    TP #2 - SBT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03-http/">
+            
+                <a href="../03-http/">
+            
+                    
+                    HTTP / Routing / Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03-http/01-protocole-http.html">
+            
+                <a href="../03-http/01-protocole-http.html">
+            
+                    
+                    Protocole HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03-http/02- communicationhttp.md">
+            
+                <span>
+            
+                    
+                    Communication HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03-http/03-requête-http.md">
+            
+                <span>
+            
+                    
+                    Requête HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03-http/04-exemple-de-requête-http.md">
+            
+                <span>
+            
+                    
+                    Exemple de requête HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../03-http/05-reponse-http.html">
+            
+                <a href="../03-http/05-reponse-http.html">
+            
+                    
+                    Réponse HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../03-http/06-statut-d'une-reponse.html">
+            
+                <a href="../03-http/06-statut-d'une-reponse.html">
+            
+                    
+                    Statut d'une réponse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../03-http/07- httpau-sein-de-l'architecture.md">
+            
+                <span>
+            
+                    
+                    HTTP au sein de l'architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../03-http/08-style-d'architecture-rest.html">
+            
+                <a href="../03-http/08-style-d'architecture-rest.html">
+            
+                    
+                    Style d'architecture REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../03-http/09- modelede-marturite-de-richardson.md">
+            
+                <span>
+            
+                    
+                    Modèle de marturité de Richardson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../03-http/10-play!-et-http.html">
+            
+                <a href="../03-http/10-play!-et-http.html">
+            
+                    
+                    Play! et HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../03-http/11-routeur-http.html">
+            
+                <a href="../03-http/11-routeur-http.html">
+            
+                    
+                    Routeur HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../03-http/12-routeur-statique.html">
+            
+                <a href="../03-http/12-routeur-statique.html">
+            
+                    
+                    Routeur statique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../03-http/13-routeur-injecte.html">
+            
+                <a href="../03-http/13-routeur-injecte.html">
+            
+                    
+                    Routeur injecté
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../03-http/14-syntaxe-routes.html">
+            
+                <a href="../03-http/14-syntaxe-routes.html">
+            
+                    
+                    Syntaxe routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../03-http/15-syntaxe-routes.html">
+            
+                <a href="../03-http/15-syntaxe-routes.html">
+            
+                    
+                    Syntaxe routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../03-http/16-contrôleur.md">
+            
+                <span>
+            
+                    
+                    Contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="../03-http/17-action.html">
+            
+                <a href="../03-http/17-action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="../03-http/18-resultat.html">
+            
+                <a href="../03-http/18-resultat.html">
+            
+                    
+                    Résultat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="../03-http/19-acceder-à-une-route-depuis-java.md">
+            
+                <span>
+            
+                    
+                    Accéder à une route depuis Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="../03-http/20-content-type.html">
+            
+                <a href="../03-http/20-content-type.html">
+            
+                    
+                    Content-type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="../03-http/21-entêtes-de-la-reponse.md">
+            
+                <span>
+            
+                    
+                    Entêtes de la réponse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="../03-http/22-encodage-des-caracteres.html">
+            
+                <a href="../03-http/22-encodage-des-caracteres.html">
+            
+                    
+                    Encodage des caractères
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="../03-http/23-parseur-de-corps-de-requête.md">
+            
+                <span>
+            
+                    
+                    Parseur de corps de requête
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.24" data-path="../03-http/24-parseur-de-corps-de-requête.md">
+            
+                <span>
+            
+                    
+                    Configurer le parseur de corps de requête
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.25" data-path="../03-http/25-composition-actions.html">
+            
+                <a href="../03-http/25-composition-actions.html">
+            
+                    
+                    Composition des actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-injection-dependances/">
+            
+                <a href="../04-injection-dependances/">
+            
+                    
+                    Injection de dépendance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-injection-dependances/01-@inject.html">
+            
+                <a href="../04-injection-dependances/01-@inject.html">
+            
+                    
+                    @Inject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-injection-dependances/02-@singleton.html">
+            
+                <a href="../04-injection-dependances/02-@singleton.html">
+            
+                    
+                    @Singleton
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-injection-dependances/03-cycle-de-vie-des-composants.html">
+            
+                <a href="../04-injection-dependances/03-cycle-de-vie-des-composants.html">
+            
+                    
+                    Cycle de vie des composants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../04-injection-dependances/04-@implementedby.html">
+            
+                <a href="../04-injection-dependances/04-@implementedby.html">
+            
+                    
+                    @ImplementedBy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../04-injection-dependances/05-configuration-programmatique.html">
+            
+                <a href="../04-injection-dependances/05-configuration-programmatique.html">
+            
+                    
+                    Configuration programmatique
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-play-enhancer/">
+            
+                <a href="../05-play-enhancer/">
+            
+                    
+                    Play! Enhancer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05-play-enhancer/99-tp.html">
+            
+                <a href="../05-play-enhancer/99-tp.html">
+            
+                    
+                    TP #3 - HTTP et Injection de dépendances
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-templating/">
+            
+                <a href="../06-templating/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06-templating/01-twirl.html">
+            
+                <a href="../06-templating/01-twirl.html">
+            
+                    
+                    Twirl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06-templating/02-syntaxe-scala.html">
+            
+                <a href="../06-templating/02-syntaxe-scala.html">
+            
+                    
+                    Syntaxe Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../06-templating/03-templates-&-scala.html">
+            
+                <a href="../06-templating/03-templates-&-scala.html">
+            
+                    
+                    Templates & Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../06-templating/04-le-caractere-@.html">
+            
+                <a href="../06-templating/04-le-caractere-@.html">
+            
+                    
+                    Le caractère @
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../06-templating/05-le-caractere-@.html">
+            
+                <a href="../06-templating/05-le-caractere-@.html">
+            
+                    
+                    Le caractère @{}
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../06-templating/06-parametres-de-template.html">
+            
+                <a href="../06-templating/06-parametres-de-template.html">
+            
+                    
+                    Paramètres de template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../06-templating/07-iterer.html">
+            
+                <a href="../06-templating/07-iterer.html">
+            
+                    
+                    Itérer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../06-templating/08-si.html">
+            
+                <a href="../06-templating/08-si.html">
+            
+                    
+                    Si
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../06-templating/09-bloc-de-code-reutilisables.html">
+            
+                <a href="../06-templating/09-bloc-de-code-reutilisables.html">
+            
+                    
+                    Bloc de code réutilisable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../06-templating/10-commentaires.html">
+            
+                <a href="../06-templating/10-commentaires.html">
+            
+                    
+                    Commentaires
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../06-templating/11-import.html">
+            
+                <a href="../06-templating/11-import.html">
+            
+                    
+                    Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../06-templating/12-contenus-echappés.md">
+            
+                <span>
+            
+                    
+                    Contenus échappés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../06-templating/13-agencement.html">
+            
+                <a href="../06-templating/13-agencement.html">
+            
+                    
+                    Agencement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../06-templating/14-agencement.html">
+            
+                <a href="../06-templating/14-agencement.html">
+            
+                    
+                    Agencement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../06-templating/15-tags.html">
+            
+                <a href="../06-templating/15-tags.html">
+            
+                    
+                    Tags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../06-templating/16-objet-`routes`.html">
+            
+                <a href="../06-templating/16-objet-`routes`.html">
+            
+                    
+                    Objet routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07-assets/">
+            
+                <a href="../07-assets/">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07-assets/01-repertoire-public.html">
+            
+                <a href="../07-assets/01-repertoire-public.html">
+            
+                    
+                    Répertoire /public
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../07-assets/02-contrôleur-assets.md">
+            
+                <span>
+            
+                    
+                    Contrôleur Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../07-assets/03-contrôleur-assets.md">
+            
+                <span>
+            
+                    
+                    Contrôleur Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../07-assets/04-support-de-less.html">
+            
+                <a href="../07-assets/04-support-de-less.html">
+            
+                    
+                    Support de LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../07-assets/05-support-de-sass.html">
+            
+                <a href="../07-assets/05-support-de-sass.html">
+            
+                    
+                    Support de SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../07-assets/06- webjars.md">
+            
+                <span>
+            
+                    
+                    WebJars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../07-assets/99-tp.html">
+            
+                <a href="../07-assets/99-tp.html">
+            
+                    
+                    TP #4 - Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08-formulaires/">
+            
+                <a href="../08-formulaires/">
+            
+                    
+                    Formulaire
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../08-formulaires/01-formulaire.html">
+            
+                <a href="../08-formulaires/01-formulaire.html">
+            
+                    
+                    package play.data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../08-formulaires/02-validation.html">
+            
+                <a href="../08-formulaires/02-validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../08-formulaires/03-formulaire-erreurs.html">
+            
+                <a href="../08-formulaires/03-formulaire-erreurs.html">
+            
+                    
+                    Formulaire - erreurs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../08-formulaires/04-dynamicform.html">
+            
+                <a href="../08-formulaires/04-dynamicform.html">
+            
+                    
+                    DynamicForm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../08-formulaires/05- utilitaires-pour-template.md">
+            
+                <span>
+            
+                    
+                    Utilitaires pour template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../08-formulaires/99-tp.html">
+            
+                <a href="../08-formulaires/99-tp.html">
+            
+                    
+                    TP #5 - Formulaires
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Configuration Play!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-configuration-alternative.html">
+            
+                <a href="01-configuration-alternative.html">
+            
+                    
+                    Configuration Alternative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-format-hocon.html">
+            
+                <a href="02-format-hocon.html">
+            
+                    
+                    Format HOCON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="03-hocon-json.html">
+            
+                <a href="03-hocon-json.html">
+            
+                    
+                    HOCON <> JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="04-format-hocon-expression.html">
+            
+                <a href="04-format-hocon-expression.html">
+            
+                    
+                    HOCON - Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="05-format-hocon-variables.html">
+            
+                <a href="05-format-hocon-variables.html">
+            
+                    
+                    HOCON - variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="06-include.html">
+            
+                <a href="06-include.html">
+            
+                    
+                    include
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="07-format-des-durees.html">
+            
+                <a href="07-format-des-durees.html">
+            
+                    
+                    Format des durées
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="08-format-des-tailles.html">
+            
+                <a href="08-format-des-tailles.html">
+            
+                    
+                    Format des tailles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.9" data-path="09-application.conf.html">
+            
+                <a href="09-application.conf.html">
+            
+                    
+                    application.conf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../10-persistances/">
+            
+                <a href="../10-persistances/">
+            
+                    
+                    Persistance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10-persistances/01-jdbc.html">
+            
+                <a href="../10-persistances/01-jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10-persistances/02-jpa.html">
+            
+                <a href="../10-persistances/02-jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10-persistances/03-ebean.html">
+            
+                <a href="../10-persistances/03-ebean.html">
+            
+                    
+                    EBean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10-persistances/04-evolutions.html">
+            
+                <a href="../10-persistances/04-evolutions.html">
+            
+                    
+                    Evolutions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../10-persistances/99-tp.html">
+            
+                <a href="../10-persistances/99-tp.html">
+            
+                    
+                    TP #6 - Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../11-securite/">
+            
+                <a href="../11-securite/">
+            
+                    
+                    Sécurité
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11-securite/01-session-play-2.html">
+            
+                <a href="../11-securite/01-session-play-2.html">
+            
+                    
+                    Session Play 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11-securite/02-cross-scripting.html">
+            
+                <a href="../11-securite/02-cross-scripting.html">
+            
+                    
+                    Cross Scripting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../11-securite/03-injection-sql.html">
+            
+                <a href="../11-securite/03-injection-sql.html">
+            
+                    
+                    Injection SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../11-securite/04-cookie.html">
+            
+                <a href="../11-securite/04-cookie.html">
+            
+                    
+                    Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../11-securite/05-session-&-flash.html">
+            
+                <a href="../11-securite/05-session-&-flash.html">
+            
+                    
+                    Session & Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../11-securite/06-utiliser-la-session.html">
+            
+                <a href="../11-securite/06-utiliser-la-session.html">
+            
+                    
+                    Utiliser la Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../11-securite/07-utiliser-le-stockage-flash.html">
+            
+                <a href="../11-securite/07-utiliser-le-stockage-flash.html">
+            
+                    
+                    Utiliser le stockage Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../11-securite/08-authentification-play.html">
+            
+                <a href="../11-securite/08-authentification-play.html">
+            
+                    
+                    Authentification Play!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../11-securite/99-tp.html">
+            
+                <a href="../11-securite/99-tp.html">
+            
+                    
+                    TP #7 - Sécurité
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../12-asynchronisme/">
+            
+                <a href="../12-asynchronisme/">
+            
+                    
+                    Asynchronisme
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../12-asynchronisme/01-asychronisme.html">
+            
+                <a href="../12-asynchronisme/01-asychronisme.html">
+            
+                    
+                    Action non bloquante
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../13-play-ws/">
+            
+                <a href="../13-play-ws/">
+            
+                    
+                    Play WS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../13-play-ws/01-play-ws-req.html">
+            
+                <a href="../13-play-ws/01-play-ws-req.html">
+            
+                    
+                    Créer une requête
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../13-play-ws/02-play-ws-req-auth.html">
+            
+                <a href="../13-play-ws/02-play-ws-req-auth.html">
+            
+                    
+                    Requête avec authentification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../13-play-ws/03-play-ws-req-json.html">
+            
+                <a href="../13-play-ws/03-play-ws-req-json.html">
+            
+                    
+                    Envoyer du JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../13-play-ws/04-play-ws-resp.html">
+            
+                <a href="../13-play-ws/04-play-ws-resp.html">
+            
+                    
+                    Transformer la réponse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../13-play-ws/05-play-ws.html">
+            
+                <a href="../13-play-ws/05-play-ws.html">
+            
+                    
+                    Composer plusieurs requêtes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../14-akka/">
+            
+                <a href="../14-akka/">
+            
+                    
+                    Akka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../14-akka/01-acteur.html">
+            
+                <a href="../14-akka/01-acteur.html">
+            
+                    
+                    Modèle d'acteurs ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../14-akka/02-archi.html">
+            
+                <a href="../14-akka/02-archi.html">
+            
+                    
+                    Synchrone vs Asynchrone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../14-akka/03-creer-acteur.html">
+            
+                <a href="../14-akka/03-creer-acteur.html">
+            
+                    
+                    Créer un acteur.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../14-akka/04-sender.html">
+            
+                <a href="../14-akka/04-sender.html">
+            
+                    
+                    Communiquer avec l'émetteur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../14-akka/05-acteur-controller.html">
+            
+                <a href="../14-akka/05-acteur-controller.html">
+            
+                    
+                    Récupérer l'instance de l'acteur depuis un contrôleur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../14-akka/06-guice.html">
+            
+                <a href="../14-akka/06-guice.html">
+            
+                    
+                    Acteur et Guice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../14-akka/07-acteur-prop.html">
+            
+                <a href="../14-akka/07-acteur-prop.html">
+            
+                    
+                    Injecter une instance d'acteur via une propriété.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../14-akka/08-acteur-via-constructeur.html">
+            
+                <a href="../14-akka/08-acteur-via-constructeur.html">
+            
+                    
+                    Injecter une instance d'acteur via le constructeur
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../14-akka/09-cas-utilisation.html">
+            
+                <a href="../14-akka/09-cas-utilisation.html">
+            
+                    
+                    Cas d'utilisation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../15-websocket/">
+            
+                <a href="../15-websocket/">
+            
+                    
+                    WebSocket
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../15-websocket/01-websocket-play.html">
+            
+                <a href="../15-websocket/01-websocket-play.html">
+            
+                    
+                    WebSocket & Play!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../15-websocket/02-websocket-exemple.html">
+            
+                <a href="../15-websocket/02-websocket-exemple.html">
+            
+                    
+                    WebSocket - Exemple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../15-websocket/99-tp.html">
+            
+                <a href="../15-websocket/99-tp.html">
+            
+                    
+                    TP #8 - Asynchronisme
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../16-production/">
+            
+                <a href="../16-production/">
+            
+                    
+                    Production
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../16-production/01-gen-cle.html">
+            
+                <a href="../16-production/01-gen-cle.html">
+            
+                    
+                    Générer un clé secrète
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../16-production/02-livrable-play.html">
+            
+                <a href="../16-production/02-livrable-play.html">
+            
+                    
+                    Livrable Play!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../16-production/03-exec.html">
+            
+                <a href="../16-production/03-exec.html">
+            
+                    
+                    Exécuter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../16-production/04-config.html">
+            
+                <a href="../16-production/04-config.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >application.conf</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="applicationconf">application.conf</h1>
+<h2 id="taille-maximum-du-corps-dune-requ&#xEA;te">Taille maximum du corps d&#x2019;une requ&#xEA;te</h2>
+<p>Les parseurs bas&#xE9;s sur du contenu textuel charge en m&#xE9;moire l&#x2019;int&#xE9;gralit&#xE9; du corps. Pour &#xE9;viter qu&#x2019;une seule requ&#xEA;te puisse avoir la possibilit&#xE9; de d&#xE9;grader les performances, une taille maximum de corps de requ&#xEA;te est d&#xE9;finie &#xE0; 100 Ko.</p>
+<pre><code class="lang-properties">play.http.parser.maxMemoryBuffer=128K
+</code></pre>
+<p>Les parseurs qui utilisent le disque pour stocker des donn&#xE9;es temporaires (multipart/form-data ou raw), la taille maximum du corps de la requ&#xEA;te est fix&#xE9;e par d&#xE9;faut &#xE0; 10 Mo.
+Pour modifier cette valeur par d&#xE9;faut :</p>
+<pre><code class="lang-properties">play.http.parser.maxDiskBuffer=15M
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-format-des-tailles.html" class="navigation navigation-prev " aria-label="Previous page: Format des tailles">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../10-persistances/" class="navigation navigation-next " aria-label="Next page: Persistance">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"application.conf","level":"1.10.9","depth":2,"next":{"title":"Persistance","level":"1.11","depth":1,"path":"10-persistances/README.md","ref":"10-persistances/README.md","articles":[{"title":"JDBC","level":"1.11.1","depth":2,"path":"10-persistances/01-jdbc.md","ref":"10-persistances/01-jdbc.md","articles":[]},{"title":"JPA","level":"1.11.2","depth":2,"path":"10-persistances/02-jpa.md","ref":"10-persistances/02-jpa.md","articles":[]},{"title":"EBean","level":"1.11.3","depth":2,"path":"10-persistances/03-ebean.md","ref":"10-persistances/03-ebean.md","articles":[]},{"title":"Evolutions","level":"1.11.4","depth":2,"path":"10-persistances/04-evolutions.md","ref":"10-persistances/04-evolutions.md","articles":[]},{"title":"TP #6 - Persistence","level":"1.11.5","depth":2,"path":"10-persistances/99-tp.md","ref":"10-persistances/99-tp.md","articles":[]}]},"previous":{"title":"Format des tailles","level":"1.10.8","depth":2,"path":"09-configuration/08-format-des-tailles.md","ref":"09-configuration/08-format-des-tailles.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-play","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Play! Framework","gitbook":"*"},"file":{"path":"09-configuration/09-application.conf.md","mtime":"2018-06-19T23:10:54.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-19T23:13:37.776Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
