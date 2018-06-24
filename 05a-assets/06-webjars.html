@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Support de SASS · Formation Play! Framework</title>
+        <title>WebJars · Formation Play! Framework</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="06-webjars.html" />
+    <link rel="next" href="../05b-tp/" />
     
     
-    <link rel="prev" href="04-support-de-less.html" />
+    <link rel="prev" href="05-support-de-sass.html" />
     
 
     </head>
@@ -1069,7 +1069,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11.5" data-path="05-support-de-sass.html">
+        <li class="chapter " data-level="1.11.5" data-path="05-support-de-sass.html">
             
                 <a href="05-support-de-sass.html">
             
@@ -1082,7 +1082,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.6" data-path="06-webjars.html">
+        <li class="chapter active" data-level="1.11.6" data-path="06-webjars.html">
             
                 <a href="06-webjars.html">
             
@@ -1100,9 +1100,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../06a-tp/">
+        <li class="chapter " data-level="1.12" data-path="../05b-tp/">
             
-                <a href="../06a-tp/">
+                <a href="../05b-tp/">
             
                     
                     TP #5 - Templates
@@ -1143,7 +1143,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Support de SASS</a>
+        <a href=".." >WebJars</a>
     </h1>
 </div>
 
@@ -1158,11 +1158,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="support-de-sass">Support de SASS</h1>
-<p>Pour activer ce support, ajouter le plugin <code>sbt-sassify</code> (<a href="https://github.com/irundaia/sbt-sassify" target="_blank">https://github.com/irundaia/sbt-sassify</a>).</p>
-<pre><code class="lang-scala">addSbtPlugin(<span class="hljs-string">&quot;org.irundaia.sbt&quot;</span> % <span class="hljs-string">&quot;sbt-sassify&quot;</span> % <span class="hljs-string">&quot;1.4.8&quot;</span>)
+                                <h1 id="webjars">WebJars</h1>
+<p>Les WebJars sont des ressources statiques (js, css, images, &#x2026;) assembl&#xE9;es dans un JAR (Java Archive).</p>
+<p>Ils offrent la possibilit&#xE9; de g&#xE9;rer les d&#xE9;pendances Web (JQuery, Bootstrap, &#x2026;) avec les outils de construction comme Maven, Gradle, SBT, &#x2026;</p>
+<p>Les WebJars sont d&#xE9;ploy&#xE9;s dans Maven Central ou autres d&#xE9;p&#xF4;ts Maven.</p>
+<p>Exemple</p>
+<pre><code class="lang-scala">libraryDependencies ++= <span class="hljs-type">Seq</span>(
+  <span class="hljs-string">&quot;org.webjars&quot;</span> % <span class="hljs-string">&quot;bootstrap&quot;</span> % <span class="hljs-string">&quot;3.1.1-2&quot;</span>
+)
 </code></pre>
-<p>Appliquer les m&#xEA;mes principes que le support de LESS.</p>
+<p>Pour chercher un WebJar : <a href="http://www.webjars.org/" target="_blank">http://www.webjars.org/</a></p>
+<p>Lorsqu&#x2019;une d&#xE9;pendance WebJars est d&#xE9;clar&#xE9;e, elle est automatiquement d&#xE9;ploy&#xE9;e dans un  r&#xE9;pertoire <code>lib</code>.</p>
 
                                 
                                 </section>
@@ -1190,12 +1196,12 @@
 
             
                 
-                <a href="04-support-de-less.html" class="navigation navigation-prev " aria-label="Previous page: Support de LESS">
+                <a href="05-support-de-sass.html" class="navigation navigation-prev " aria-label="Previous page: Support de SASS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="06-webjars.html" class="navigation navigation-next " aria-label="Next page: WebJars">
+                <a href="../05b-tp/" class="navigation navigation-next " aria-label="Next page: TP #5 - Templates">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1206,7 +1212,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Support de SASS","level":"1.11.5","depth":2,"next":{"title":"WebJars","level":"1.11.6","depth":2,"path":"06-assets/06-webjars.md","ref":"06-assets/06-webjars.md","articles":[]},"previous":{"title":"Support de LESS","level":"1.11.4","depth":2,"path":"06-assets/04-support-de-less.md","ref":"06-assets/04-support-de-less.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-play","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Play! Framework","gitbook":"*"},"file":{"path":"06-assets/05-support-de-sass.md","mtime":"2018-06-24T19:59:06.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-24T20:02:08.557Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebJars","level":"1.11.6","depth":2,"next":{"title":"TP #5 - Templates","level":"1.12","depth":1,"path":"05b-tp/README.md","ref":"05b-tp/README.md","articles":[]},"previous":{"title":"Support de SASS","level":"1.11.5","depth":2,"path":"05a-assets/05-support-de-sass.md","ref":"05a-assets/05-support-de-sass.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-play","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Play! Framework","gitbook":"*"},"file":{"path":"05a-assets/06-webjars.md","mtime":"2018-06-24T21:17:08.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-24T21:19:46.342Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

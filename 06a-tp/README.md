@@ -1,4 +1,4 @@
-# TP #5 - Formulaires
+# TP #6 - Formulaires
 
 ## Créer une nouvelle tâche
 
@@ -25,7 +25,7 @@ POST    /inbox/create
 
 ## Editer une tâche
 
-* Renommer les boutons `Details` en `Edit`.
+* Ajouter le bouton `Edit`.
 
 ![](images/tp-05-btn-edit.png)
 

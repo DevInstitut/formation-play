@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Support de LESS · Formation Play! Framework</title>
+        <title>TP #5 - Templates · Formation Play! Framework</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="05-support-de-sass.html" />
     
-    
-    <link rel="prev" href="03-controleur-assets.html" />
+    <link rel="prev" href="../05a-assets/06-webjars.html" />
     
 
     </head>
@@ -1003,9 +1001,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="./">
+        <li class="chapter " data-level="1.11" data-path="../05a-assets/">
             
-                <a href="./">
+                <a href="../05a-assets/">
             
                     
                     Assets
@@ -1017,9 +1015,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="01-repertoire-public.html">
+        <li class="chapter " data-level="1.11.1" data-path="../05a-assets/01-repertoire-public.html">
             
-                <a href="01-repertoire-public.html">
+                <a href="../05a-assets/01-repertoire-public.html">
             
                     
                     Répertoire /public
@@ -1030,22 +1028,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="02-controleur-assets.html">
+        <li class="chapter " data-level="1.11.2" data-path="../05a-assets/02-controleur-assets.html">
             
-                <a href="02-controleur-assets.html">
-            
-                    
-                    Contrôleur Assets
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.3" data-path="03-controleur-assets.html">
-            
-                <a href="03-controleur-assets.html">
+                <a href="../05a-assets/02-controleur-assets.html">
             
                     
                     Contrôleur Assets
@@ -1056,9 +1041,22 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11.4" data-path="04-support-de-less.html">
+        <li class="chapter " data-level="1.11.3" data-path="../05a-assets/03-controleur-assets.html">
             
-                <a href="04-support-de-less.html">
+                <a href="../05a-assets/03-controleur-assets.html">
+            
+                    
+                    Contrôleur Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../05a-assets/04-support-de-less.html">
+            
+                <a href="../05a-assets/04-support-de-less.html">
             
                     
                     Support de LESS
@@ -1069,9 +1067,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.5" data-path="05-support-de-sass.html">
+        <li class="chapter " data-level="1.11.5" data-path="../05a-assets/05-support-de-sass.html">
             
-                <a href="05-support-de-sass.html">
+                <a href="../05a-assets/05-support-de-sass.html">
             
                     
                     Support de SASS
@@ -1082,9 +1080,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.6" data-path="06-webjars.html">
+        <li class="chapter " data-level="1.11.6" data-path="../05a-assets/06-webjars.html">
             
-                <a href="06-webjars.html">
+                <a href="../05a-assets/06-webjars.html">
             
                     
                     WebJars
@@ -1100,9 +1098,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../06a-tp/">
+        <li class="chapter active" data-level="1.12" data-path="./">
             
-                <a href="../06a-tp/">
+                <a href="./">
             
                     
                     TP #5 - Templates
@@ -1143,7 +1141,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Support de LESS</a>
+        <a href=".." >TP #5 - Templates</a>
     </h1>
 </div>
 
@@ -1158,37 +1156,112 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="support-de-less">Support de LESS</h1>
-<p>Les fichiers LESS sont &#xE0; positionner dans le r&#xE9;pertoire <code>/app/assets</code>.</p>
-<p>Les fichiers CSS g&#xE9;n&#xE9;r&#xE9;s sont publi&#xE9;s dans le r&#xE9;pertoire <code>/public</code>.
-Exemple : le fichier <code>app/assets/stylesheets/main.less</code> produira un fichier <code>public/stylesheets/main.css</code>.</p>
-<p>Play! configure automatiquement le fichier <code>main.less</code>.</p>
-<p>Pour r&#xE9;f&#xE9;rencer d&apos;autres fichiers, le fichier <code>build.sbt</code> peut-&#xEA;tre configur&#xE9; comme suit :</p>
-<pre><code>includeFilter in (Assets, LessKeys.less) := &quot;foo.less&quot; | &quot;bar.less&quot;
-</code></pre><h2 id="activer-le-support-de-less">Activer le support de LESS</h2>
-<p>Ajouter le plugin <code>sbt-less</code> (<a href="https://github.com/sbt/sbt-less#sbt-less" target="_blank">https://github.com/sbt/sbt-less#sbt-less</a>).</p>
-<pre><code class="lang-scala">addSbtPlugin(<span class="hljs-string">&quot;com.typesafe.sbt&quot;</span> % <span class="hljs-string">&quot;sbt-less&quot;</span> % <span class="hljs-string">&quot;1.0.6&quot;</span>)
+                                <h1 id="tp-5---templates">TP #5 - Templates</h1>
+<h2 id="int&#xE9;gration-bootstrap">Int&#xE9;gration Bootstrap</h2>
+<ul>
+<li><p>Dans le fichier <code>build.sbt</code>, ajouter la d&#xE9;pendance vers le projet <code>bootstrap</code>.</p>
+</li>
+<li><p>Si un fichier <code>public/stylesheets/main.css</code> existe, supplimer le.</p>
+</li>
+<li><p>Cr&#xE9;er un fichier <code>app/assets/stylesheets/main.scss</code>. Y inclure le contenu suivant :</p>
+</li>
+</ul>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;lib/bootstrap/scss/bootstrap.scss&quot;</span>;
 </code></pre>
-<h2 id="exemple-dorganisation-de-fichier-less">Exemple d&apos;organisation de fichier LESS</h2>
-<pre><code class="lang-bash">app
- &#x2514; assets
-    &#x2514; stylesheets
-       &#x2514; main.less
-       &#x2514; utils
-          &#x2514; reset.less
-          &#x2514; layout.less
-</code></pre>
-<p>Fichier <code>app/assets/stylesheets/main.less</code> :</p>
-<pre><code class="lang-less"><span class="hljs-keyword">@import</span> <span class="hljs-string">&quot;utils/reset.less&quot;</span>;
-<span class="hljs-keyword">@import</span> <span class="hljs-string">&quot;utils/layout.less&quot;</span>;
+<ul>
+<li>Modifier l&apos;application pour que une requ&#xEA;te <code>GET /</code> affiche la page suivante :</li>
+</ul>
+<p><img src="images/tp-04-welcome.png" alt=""></p>
+<p>Utiliser le composant Jumbotron : <a href="http://getbootstrap.com/components/#jumbotron" target="_blank">http://getbootstrap.com/components/#jumbotron</a>.</p>
+<h2 id="structure-de-page">Structure de page</h2>
+<ul>
+<li>Cr&#xE9;er la structure de fichiers suivantes :</li>
+</ul>
+<pre><code>/app
+    /views
+        index.scala.html --&gt; n&apos;a de lien qu&apos;avec layout/main.scala
+        /layout
+            footer.scala.html
+            header.scala.html
+            main.scala.html --&gt; structure principale de toutes les pages
+</code></pre><ul>
+<li>Compl&#xE9;ter les fichier pour avoir le rendu suivant :</li>
+</ul>
+<p><img src="images/tp-04-header-footer.png" alt=""></p>
+<h2 id="navigation">Navigation</h2>
+<ul>
+<li><em>GET /inbox</em> emm&#xE8;ne &#xE0; la page suivante :</li>
+</ul>
+<p><img src="images/tp-04-nav-inbox.png" alt=""></p>
+<ul>
+<li><em>GET /review</em> emm&#xE8;ne &#xE0; la page suivante :</li>
+</ul>
+<p><img src="images/tp-04-nav-review.png" alt=""></p>
+<ul>
+<li><em>GET /do</em> emm&#xE8;ne &#xE0; la page suivante :</li>
+</ul>
+<p><img src="images/tp-04-nav-do.png" alt=""></p>
+<p>Arborescence des fichiers cr&#xE9;&#xE9;s :</p>
+<pre><code>/app
+    /controllers
+        HomeController.java
+        InboxController.java
+        ReviewController.java
+        TodoController.java
+    /views
+        inbox.scala.html
+        index.scala.html
+        review.scala.html
+        todo.scala.html
+        /layout
+            footer.scala.html
+            header.scala.html
+            main.scala.html
+</code></pre><h2 id="page-inbox">Page Inbox</h2>
+<ul>
+<li>Compl&#xE9;ter la classe <code>InboxItemServiceHashMap</code> pour qu&apos;elle cr&#xE9;e un jeux de donn&#xE9;es par d&#xE9;faut.
+Par exemple :</li>
+</ul>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InboxItemServiceHashMap</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">InboxItemService</span> </span>{
 
-<span class="hljs-selector-tag">h1</span> {
-    <span class="hljs-attribute">color</span>: red;
+    <span class="hljs-keyword">private</span> Map&lt;UUID, InboxItem&gt; items = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">InboxItemServiceHashMap</span><span class="hljs-params">()</span> </span>{
+        InboxItem item1 = <span class="hljs-keyword">new</span> InboxItem(<span class="hljs-string">&quot;T&#xE2;che 1&quot;</span>, <span class="hljs-string">&quot;https://getbootstrap.com&quot;</span>, <span class="hljs-string">&quot;Une note sur Bootstrap&quot;</span>);
+        item1.setId(UUID.randomUUID());
+        items.put(item1.getId(), item1);
+
+        InboxItem item2 = <span class="hljs-keyword">new</span> InboxItem(<span class="hljs-string">&quot;T&#xE2;che 2&quot;</span>, <span class="hljs-string">&quot;https://www.webjars.org&quot;</span>, <span class="hljs-string">&quot;Une note sur les Webjars&quot;</span>);
+        item2.setId(UUID.randomUUID());
+        items.put(item2.getId(), item2);
+
+        InboxItem item3 = <span class="hljs-keyword">new</span> InboxItem(<span class="hljs-string">&quot;T&#xE2;che 3&quot;</span>, <span class="hljs-string">&quot;http://search.maven.org/&quot;</span>, <span class="hljs-string">&quot;Une note sur Maven Central&quot;</span>);
+        item3.setId(UUID.randomUUID());
+        items.put(item3.getId(), item3);
+    }
+
+    <span class="hljs-comment">// ...</span>
+
 }
 </code></pre>
-<p>R&#xE9;f&#xE9;rencement dans un template :</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;@routes.Assets.at(&quot;</span><span class="hljs-string">stylesheets</span>/<span class="hljs-attr">main.css</span>&quot;)&quot;&gt;</span>
-</code></pre>
+<ul>
+<li>Impl&#xE9;menter la page <em>Inbox</em> pour qu&apos;elle affiche les &#xE9;l&#xE9;ments suivants :</li>
+</ul>
+<p><img src="images/tp-04-inbox-items.png" alt=""></p>
+<ul>
+<li>Un clic sur le bouton <em>Details</em> affiche la page <em>/inbox/[ID_ITEM]</em>.</li>
+</ul>
+<h2 id="page-inbox-details">Page Inbox Details</h2>
+<ul>
+<li>Impl&#xE9;menter la page <em>Inbox Details</em> pour avoir le rendu suivant :</li>
+</ul>
+<p><img src="images/tp-04-inbox-details.png" alt=""></p>
+<ul>
+<li>Si l&apos;identifiant UUID n&apos;est pas trouv&#xE9;, alors la page suivante s&apos;affiche :</li>
+</ul>
+<p><img src="images/tp-04-error.png" alt=""></p>
+<p>Effectuer le test avec un UUID valide (par exemple : <a href="http://localhost:9000/inbox/608c811b-01f6-4690-93bc-74285b7e1b2b" target="_blank">http://localhost:9000/inbox/608c811b-01f6-4690-93bc-74285b7e1b2b</a>).</p>
 
                                 
                                 </section>
@@ -1216,14 +1289,10 @@ Exemple : le fichier <code>app/assets/stylesheets/main.less</code> produira un f
 
             
                 
-                <a href="03-controleur-assets.html" class="navigation navigation-prev " aria-label="Previous page: Contrôleur Assets">
+                <a href="../05a-assets/06-webjars.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: WebJars">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="05-support-de-sass.html" class="navigation navigation-next " aria-label="Next page: Support de SASS">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1232,7 +1301,7 @@ Exemple : le fichier <code>app/assets/stylesheets/main.less</code> produira un f
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Support de LESS","level":"1.11.4","depth":2,"next":{"title":"Support de SASS","level":"1.11.5","depth":2,"path":"06-assets/05-support-de-sass.md","ref":"06-assets/05-support-de-sass.md","articles":[]},"previous":{"title":"Contrôleur Assets","level":"1.11.3","depth":2,"path":"06-assets/03-controleur-assets.md","ref":"06-assets/03-controleur-assets.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-play","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Play! Framework","gitbook":"*"},"file":{"path":"06-assets/04-support-de-less.md","mtime":"2018-06-24T19:59:06.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-24T20:02:08.557Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TP #5 - Templates","level":"1.12","depth":1,"previous":{"title":"WebJars","level":"1.11.6","depth":2,"path":"05a-assets/06-webjars.md","ref":"05a-assets/06-webjars.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-play","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Play! Framework","gitbook":"*"},"file":{"path":"05b-tp/README.md","mtime":"2018-06-24T21:17:08.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-24T21:19:46.342Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
