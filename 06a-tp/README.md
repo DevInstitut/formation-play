@@ -1,122 +1,45 @@
-# TP #5 - Templates
+# TP #6 - Formulaires
 
-## Intégration Bootstrap
+## Créer une nouvelle tâche
 
-* Dans le fichier `build.sbt`, ajouter la dépendance vers le projet `bootstrap`.
+* Ajouter un bouton `New` dans la page `Inbox`.
 
-* Si un fichier `public/stylesheets/main.css` existe, supplimer le.
+![](images/tp-05-btn-new.png)
 
-* Créer un fichier `app/assets/stylesheets/main.scss`. Y inclure le contenu suivant :
+* Implémenter le formulaire de création de nouvelle tâche.
 
-```css
-@import "lib/bootstrap/scss/bootstrap.scss";
-```
+![](images/tp-05-create-inbox-item.png)
 
-* Modifier l'application pour que une requête `GET /` affiche la page suivante :
-
-![](images/tp-04-welcome.png)
-
-Utiliser le composant Jumbotron : http://getbootstrap.com/components/#jumbotron.
-
-## Structure de page
-
-* Créer la structure de fichiers suivantes :
+2 routes sont à créer :
 
 ```
-/app
-    /views
-        index.scala.html --> n'a de lien qu'avec layout/main.scala
-        /layout
-            footer.scala.html
-            header.scala.html
-            main.scala.html --> structure principale de toutes les pages
+GET     /inbox/create
+POST    /inbox/create 
 ```
 
+* Ajouter des contraintes de validation sur le titre d'une tâche (champ `title`) : champs requis et de taille minimum égale à 3.
 
-* Compléter les fichier pour avoir le rendu suivant :
+* Lors de la soumission du formulaire, en cas d'erreur de validation, la page courante s'affiche à nouveau.
 
-![](images/tp-04-header-footer.png)
+* Lors de la soumission du formulaire, en cas de succès, l'utilisateur est redirigé vers la liste des tâches (`Inbox`).
 
-## Navigation
+## Editer une tâche
 
-* _GET /inbox_ emmène à la page suivante :
+* Ajouter le bouton `Edit`.
 
-![](images/tp-04-nav-inbox.png)
+![](images/tp-05-btn-edit.png)
 
-* _GET /review_ emmène à la page suivante :
+* Implémenter le formulaire d'édition pour permettre la mise à jour d'une tâche.
 
-![](images/tp-04-nav-review.png)
+![](images/tp-05-edit-inbox-item.png)
 
-* _GET /do_ emmène à la page suivante :
-
-![](images/tp-04-nav-do.png)
-
-Arborescence des fichiers créés :
+2 routes seront à créer :
 
 ```
-/app
-    /controllers
-        HomeController.java
-        InboxController.java
-        ReviewController.java
-        TodoController.java
-    /views
-        inbox.scala.html
-        index.scala.html
-        review.scala.html
-        todo.scala.html
-        /layout
-            footer.scala.html
-            header.scala.html
-            main.scala.html
+GET     /inbox/edit/:id
+POST    /inbox/edit/:id 
 ```
 
-## Page Inbox
+* Lors de la soumission du formulaire, en cas d'erreur de validation, la page courante s'affiche à nouveau.
 
-* Compléter la classe `InboxItemServiceHashMap` pour qu'elle crée un jeux de données par défaut.
-Par exemple :
-
-```java
-
-public class InboxItemServiceHashMap implements InboxItemService {
-
-    private Map<UUID, InboxItem> items = new HashMap<>();
-
-    public InboxItemServiceHashMap() {
-        InboxItem item1 = new InboxItem("Tâche 1", "https://getbootstrap.com", "Une note sur Bootstrap");
-        item1.setId(UUID.randomUUID());
-        items.put(item1.getId(), item1);
-
-        InboxItem item2 = new InboxItem("Tâche 2", "https://www.webjars.org", "Une note sur les Webjars");
-        item2.setId(UUID.randomUUID());
-        items.put(item2.getId(), item2);
-
-        InboxItem item3 = new InboxItem("Tâche 3", "http://search.maven.org/", "Une note sur Maven Central");
-        item3.setId(UUID.randomUUID());
-        items.put(item3.getId(), item3);
-    }
-    
-    // ...
-    
-}
-```
-
-* Implémenter la page _Inbox_ pour qu'elle affiche les éléments suivants :
-
-![](images/tp-04-inbox-items.png)
-
-* Un clic sur le bouton _Details_ affiche la page _/inbox/[ID_ITEM]_.
-
-## Page Inbox Details
-
-* Implémenter la page _Inbox Details_ pour avoir le rendu suivant :
-
-![](images/tp-04-inbox-details.png)
-
-* Si l'identifiant UUID n'est pas trouvé, alors la page suivante s'affiche :
-
-![](images/tp-04-error.png)
-
-Effectuer le test avec un UUID valide (par exemple : http://localhost:9000/inbox/608c811b-01f6-4690-93bc-74285b7e1b2b).
-
- 
+* Lors de la soumission du formulaire, en cas de succès, l'utilisateur est redirigé vers la liste des tâches (`Inbox`).
