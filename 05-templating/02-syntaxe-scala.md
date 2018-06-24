@@ -59,7 +59,7 @@ List[String] // équivalent Java List<String>
 
 // Structure de contrôle
 
-// Création d'une liste de 3 éléments
+// if
 if (check) happy else sad
 
 // for

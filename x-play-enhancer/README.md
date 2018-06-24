@@ -38,3 +38,4 @@ System.out.println(p.id); // => System.out.println(p.getId())
 System.out.println(p.lastname); // => le getter n'est pas invoqué
 ```
 
+> ATTENTION : les IDEs ayant généralement leurs propres processus de compilation, il peut avoir des problématiques de prise en compte par les IDEs.

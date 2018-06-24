@@ -90,9 +90,9 @@ sbt run
 
 par défaut, le port 9000 est utilisé.
 
-Pour démarrer l'application sur un port différent : `sbt 'run 8000'`
+> Pour démarrer l'application sur un port différent : `sbt 'run 8000'`
 
-* Visualiser la page affichée.
+* Visualiser la page affichée : http://localhost:9000
 
 ![](images/img001.png)
 

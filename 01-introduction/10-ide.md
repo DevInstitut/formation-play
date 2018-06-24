@@ -8,6 +8,4 @@
 
 ## IntelliJ
 
-* Via le plugin Scala (https://plugins.jetbrains.com/plugin/?id=1347).
-
-…
+* Via les plugins SBT, Scala et Play! Framework.

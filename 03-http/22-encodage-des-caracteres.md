@@ -2,7 +2,7 @@
 
 Pour un résultat texte, il est important de spécifier l'encodage utilisé.
 
-Play! utilise par défaut l'encodage UTF-8.
+Play! utilise par défaut l'encodage `UTF-8`.
 
 L'encode peut-être spécifié :
 

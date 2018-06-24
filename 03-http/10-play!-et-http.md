@@ -4,7 +4,7 @@ Play! a été conçu pour inciter les développeurs à respecter la sémantique 
 
 Pour traiter une requête HTTP, Play! met à disposition :
 
-* Un fichier de configuration des routes (`conf/routes`) qui fait le lien entre une requête HTTP et une méthode Java.
+* Un fichier de configuration des routes (**`conf/routes`**) qui fait le lien entre une requête HTTP et une méthode Java.
   * Le développeur est invité à prendre des décisions sur le design de son API.
 
 * Des contrôleurs dont les méthodes permettent de traiter une requête et générer une réponse.

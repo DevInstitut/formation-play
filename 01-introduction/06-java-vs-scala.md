@@ -4,9 +4,10 @@
 
 * Choisir Java :
 
-  * Java est un langage très répandue avec un forte communauté d’utilisateurs.
-  * Il est plus facile de trouver des développeurs Java sur le marché
+  * Java est un langage très répandu avec un forte communauté d’utilisateurs.
+  * Il est plus facile de trouver des développeurs Java sur le marché.
 
 * Choisir Scala
   * Scala, comme Scalable Language, est un langage `moderne` qui permet de programmer en utilisant des paradigmes objet ET fonctionnel.
+  * La communauté Play! utilise encore majoritairement le framework en Scala.
 
