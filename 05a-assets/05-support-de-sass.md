@@ -3,7 +3,7 @@
 Pour activer ce support, ajouter le plugin `sbt-sassify` (https://github.com/irundaia/sbt-sassify).
 
 ```scala
-addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.8")
+addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.12")
 ```
 
 Appliquer les mêmes principes que le support de LESS.

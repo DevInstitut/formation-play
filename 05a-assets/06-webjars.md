@@ -10,7 +10,7 @@ Exemple
 
 ```scala
 libraryDependencies ++= Seq(
-  "org.webjars" % "bootstrap" % "3.1.1-2"
+  "org.webjars" % "bootstrap" % "4.1.1"
 )
 ```
 
