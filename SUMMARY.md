@@ -100,4 +100,4 @@
 * [Persistance](08b-persistances/README.md)
   * [JDBC](08b-persistances/01-jdbc.md)
   * [JPA](08b-persistances/02-jpa.md)
-* [TP #7 - Persistance JPA](08c-tp/README.md)
+* [TP #8 - Persistance JPA](08c-tp/README.md)
