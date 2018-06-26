@@ -1,4 +1,4 @@
-# TP #7 - Persistance JPA
+# TP #8 - Persistance JPA
 
 ## Base de données
 
