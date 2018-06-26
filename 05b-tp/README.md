@@ -16,7 +16,7 @@
 
 ![](images/tp-04-welcome.png)
 
-Utiliser le composant Jumbotron : http://getbootstrap.com.
+    Utiliser le composant Jumbotron : http://getbootstrap.com.
 
 ## Structure de page
 
