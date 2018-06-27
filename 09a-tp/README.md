@@ -2,7 +2,7 @@
 
 ## Authentification
 
-* Compléter le fichier _conf/evolutions/default/1.sql_ avec le contenu suivant :
+* Créer une table `USER`  :
 
 ```sql
 CREATE TABLE USER (
