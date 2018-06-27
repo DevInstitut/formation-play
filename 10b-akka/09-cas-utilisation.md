@@ -34,16 +34,16 @@ public Result action() {
 
 public CompletionStage<Result> action() {
 
-// paramètre 1 = acteur
-// paramètre 2 = message
-// paramètre 3 = timeout
-Future<Object> actorResponse = Patterns.ask(myActor, monMessage, 10000);
-
-// Transformation Future (Scala) -> CompletionStage (Java 8)
-// Construction du résultat avec la réponse de l'acteur
-// Cela suppose que l'acteur envoie bien un retour (sender().tell(..))
-return FutureConverters.toJava(actorResponse)
-        .thenApply(response -> ok(Json.toJson(response)));
+    // paramètre 1 = acteur
+    // paramètre 2 = message
+    // paramètre 3 = timeout
+    Future<Object> actorResponse = Patterns.ask(myActor, monMessage, 10000);
+    
+    // Transformation Future (Scala) -> CompletionStage (Java 8)
+    // Construction du résultat avec la réponse de l'acteur
+    // Cela suppose que l'acteur envoie bien un retour (sender().tell(..))
+    return FutureConverters.toJava(actorResponse)
+            .thenApply(response -> ok(Json.toJson(response)));
 }
 ```
 

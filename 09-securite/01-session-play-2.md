@@ -2,7 +2,7 @@
 
 La session permet d'éviter à un utilisateur de saisir ses informations de connexion à chaque requête HTTP.
 
-La session Play 2 est **stockée dans un cookie** (donc côté client). 
+La session Play 2 est **stockée dans un cookie** (donc côté client) au format **JSON Web Token**. 
 Cette approche est différente celle choisie par Java EE (informations utilisateurs sauvegardées côté serveur).
 
 Le choix du cookie implique des limitations :
